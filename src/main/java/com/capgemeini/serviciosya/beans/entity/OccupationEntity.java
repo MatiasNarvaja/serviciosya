@@ -28,6 +28,7 @@ public class OccupationEntity {
     public OccupationEntity() {
 
         super ();
+        
     }
 
     public OccupationEntity(int id, String name) {
