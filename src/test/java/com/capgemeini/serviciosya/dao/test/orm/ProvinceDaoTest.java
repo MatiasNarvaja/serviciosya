@@ -25,7 +25,7 @@ public class ProvinceDaoTest {
 
         ProvinceEntity p = new ProvinceEntity ();
         CountryEntity c = new CountryEntity ();
-        c.setId (3);
+        c.setId (2);
         p.setName ("CABA");
         p.setCountry (c);
 

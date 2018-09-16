@@ -32,7 +32,7 @@ public class ProviderDaoTest {
     p.setStatus(0);
     this.dao.create (p);
 
-    Assert.assertNotNull ("Failure creating new country.", p.getId ());
+    Assert.assertNotNull ("Failure creating new provider.", p.getId ());
   }
 
 
@@ -45,7 +45,7 @@ public class ProviderDaoTest {
         p.getOccupations().forEach( e -> System.out.println (e.getName ()));
 
 
-        Assert.assertFalse ("Failure find all provinces.", p.getOccupations().isEmpty());
+        Assert.assertFalse ("Failure find all provider.", p.getOccupations().isEmpty());
     }
 
     @Test

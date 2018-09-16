@@ -22,7 +22,7 @@ public class CountryDaoAnnotationTest {
     public void testCreate () {
 
         CountryEntity c = new CountryEntity ();
-        c.setName ("Venezuela");
+        c.setName ("Argentina");
         this.dao.create (c);
 
       Assert.assertNotNull ("Failure creating new country.", c.getId ());
