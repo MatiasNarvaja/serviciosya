@@ -21,22 +21,31 @@ public class OccupationEntity {
     @Column (name = "name", length = 48, nullable = false)
     private String name;
 
-    @ManyToMany (mappedBy="occupations")
-    private Set<ProviderEntity> providers = new HashSet<>();
+    @Column(name = "description",length = 128,nullable = false)
+    private String description;
+
+    @Column(name = "parent")
+    private int parent;
+
+    //@ManyToMany (mappedBy="occupation")
+    //private Set<OccupationEntity> occupation = new HashSet<>();
 
 
     public OccupationEntity() {
 
         super ();
-        
+
     }
 
-    public OccupationEntity(int id, String name) {
+    public OccupationEntity(int id, String name,String description,int parent) {
 
         super ();
 
         this.id = id;
         this.name = name;
+        this.description=description;
+        this.parent=parent;
+
     }
 
 
@@ -59,16 +68,21 @@ public class OccupationEntity {
 
         this.name = name;
     }
-
-    public Set<ProviderEntity> getProviders() {
-
-        return providers;
+    public String getDescription(){
+        return  description;
+    }
+    public void setDescription(String description){
+        this.description=description;
+    }
+    public int getParent(){
+        return parent;
+    }
+    public  void setParent(int parent){
+        this.parent=parent;
     }
 
-    public void setProviders(Set<ProviderEntity> providers) {
 
-        this.providers = providers;
-    }
+
 
   @Override
     public String toString () {

@@ -18,7 +18,7 @@ public class CityDaoTest {
 
         CityEntity p = new CityEntity();
         ProvinceEntity c = new ProvinceEntity();
-        c.setId (3);
+        c.setId (1);
         p.setName ("Devoto");
         p.setProvince (c);
 

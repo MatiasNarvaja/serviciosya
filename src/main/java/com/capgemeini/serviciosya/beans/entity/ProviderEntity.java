@@ -34,7 +34,7 @@ public class ProviderEntity {
     @Column (name = "name", length = 48, nullable = false)
     private String name;
 
-    @Column (name = "\"lastName\"", length = 48, nullable = false)
+    @Column (name = "lastname", length = 48, nullable = false)
     private String lastName;
 
     @Column (name = "phone", length = 48, nullable = false, unique = true)

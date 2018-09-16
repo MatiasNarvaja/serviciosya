@@ -23,7 +23,7 @@ public class ProviderDaoTest {
     p.setName("Bart");
     p.setLastName("Simpson");
     p.setDni(1234);
-    p.setEmail("bartsimpsongmail.com");
+    p.setEmail("bartsimpson@gmail.com");
     p.setPhone ("1234567890");
     p.setAddress("Cordoba");
     CityEntity city = new CityEntity();
